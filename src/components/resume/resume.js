@@ -1,41 +1,10 @@
-import React, { useEffect, useRef } from 'react';
-// import throttle from "lodash.throttle"
-import * as styles from './resume.module.css';
+import React, { useRef } from 'react';
 import { FaFileDownload } from 'react-icons/fa';
 import pdf from '../../files/resume.pdf';
+import * as styles from './resume.module.css';
 
 const Resume = (props) => {
   const container = useRef(null);
-
-  const scrollHelper = (e) => {
-    if (e.deltaY >= 0 || container.current.scrollTop > 0) {
-      e.stopPropagation();
-    }
-  };
-
-  // const throttledScroll = throttle(scrollHelper, 500, { trailing: false })
-
-  useEffect(() => {
-    container.current.addEventListener(
-      'wheel',
-      (e) => {
-        scrollHelper(e);
-      },
-      { passive: false }
-    );
-
-    // container.current.addEventListener("wheel", throttledScroll)
-
-    return container.current.removeEventListener(
-      'wheel',
-      (e) => {
-        scrollHelper(e);
-      },
-      { passive: false }
-    );
-
-    // container.current.removeEventListener("wheel", throttledScroll)
-  }, []);
 
   return (
     <div id="Resume" ref={container} className={styles.container}>
