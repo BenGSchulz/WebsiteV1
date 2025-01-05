@@ -1,0 +1,27 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  /* overflow-y: scroll; */
+  box-sizing: border-box;
+}
+
+.sectionTitle {
+  margin: 5vh 5vw 0 5vw;
+  height: 10vh;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  line-height: 10vh;
+  box-sizing: border-box;
+}
+
+.sectionTitle:first-child {
+  margin: 0 5vw;
+}
+
+@media only screen and (max-width: 1025px) {
+  .container {
+    overflow-y: visible;
+  }
+}

@@ -1,0 +1,122 @@
+.container {
+  position: relative;
+  box-sizing: border-box;
+  height: 90vh;
+  width: 90vw;
+  margin: 0 5vw;
+  padding: 20px 5vw 100px 5vw;
+  text-align: left;
+}
+
+/* .container::-webkit-scrollbar {
+  display: block;
+  width: 8px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #f2f2f2;
+}
+
+.container::-webkit-scrollbar-button {
+  width: 5vw;
+  height: 1.5vh;
+  margin: 0;
+} */
+
+.container a {
+  color: #f2f2f2;
+  font-style: italic;
+}
+
+.download {
+  position: relative;
+  width: fit-content;
+  border-bottom: 1px solid #f2f2f2;
+  font-size: 200%;
+  transition: all 0.25s;
+}
+
+.download:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.section {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.sectionHeader {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  border-bottom: 1px solid #f2f2f2;
+  font-size: 150%;
+}
+
+.blockHeader {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+  font-size: 120%;
+}
+
+.educationBody {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+
+.experienceBody {
+  padding-left: 20px;
+  margin: 5px 0 0 0;
+}
+
+.fullTable {
+  margin-left: -10px;
+  border-spacing: 10px;
+}
+
+.mobileTable {
+  margin-left: -10px;
+  border-spacing: 10px;
+}
+
+.mobileTable th {
+  text-decoration: underline;
+}
+
+.mobileTable td {
+  vertical-align: top;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    height: fit-content;
+  }
+
+  .sectionHeader {
+    font-size: 150%;
+  }
+
+  .blockHeader {
+    font-size: 120%;
+  }
+}
+
+@media only screen and (min-width: 1023px) {
+  .mobileTable {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .fullTable {
+    display: none;
+  }
+}

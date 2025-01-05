@@ -1,0 +1,46 @@
+.container {
+  position: fixed;
+  width: 100vw;
+  height: 5vh;
+  bottom: 0;
+  overflow: visible;
+  padding-bottom: 20px;
+  font-weight: bold;
+  background: #101213;
+  border-top: 2px solid #f2f2f2;
+  z-index: 100;
+  user-select: none;
+}
+
+.socialGroup {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.social {
+  display: inline-block;
+  font-size: 150%;
+  line-height: 150%;
+  box-sizing: border-box;
+  padding: 10px;
+  color: #f2f2f2;
+  text-decoration: none;
+  transition: all .25s;
+  white-space: nowrap;
+}
+
+.social > svg {
+  vertical-align: middle;
+}
+
+@media only screen and (min-width: 800px) {
+  .container {
+    display: none;
+  }
+} 

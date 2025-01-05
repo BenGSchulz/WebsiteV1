@@ -1,0 +1,67 @@
+.container {
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  top: 0;
+  overflow: visible;
+  font-weight: bold;
+  background: #101213;
+  border-bottom: 2px solid #f2f2f2;
+  box-sizing: border-box;
+  z-index: 100;
+  user-select: none;
+}
+
+.name {
+  position: absolute;
+  margin-left: 5%;
+  padding-top: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 200%;
+}
+
+.socialGroup {
+  position: relative;
+  left: 95%;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.social {
+  position: relative;
+  display: inline-block;
+  font-size: 175%;
+  line-height: 175%;
+  box-sizing: border-box;
+  padding: 10px;
+  color: #f2f2f2;
+  text-decoration: none;
+  transition: all .25s;
+  white-space: nowrap;
+}
+
+.social > svg {
+  vertical-align: middle;
+}
+
+.social:hover {
+  outline: 0;
+  font-size: 200%;
+  line-height: 175%;
+  /* padding-bottom: 20px; */
+}
+
+@media only screen and (max-width: 800px) {
+  .name {
+    display: none;
+  }
+
+  .social {
+    display: none;
+  }
+} 

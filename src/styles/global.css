@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass');
+
+html {
+  height: 100%;
+  color: #f2f2f2;
+  font-family: 'Overpass', sans-serif;
+  background: #101213;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  width: auto;
+  height: 100%;
+  float: right;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

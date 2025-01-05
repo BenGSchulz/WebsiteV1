@@ -1,0 +1,72 @@
+.container {
+  position: relative;
+  margin-bottom: 3.5vh;
+  margin-inline: 5vw;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  /* -webkit-overflow-scrolling: touch; */
+}
+
+.scroller {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5%;
+  height: 90%;
+  background: rgba(20, 20, 20, 0.5);
+  transition: all 0.25s;
+  z-index: 100;
+}
+
+.scroller:hover {
+  cursor: pointer;
+  width: 8%;
+}
+
+.left {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(16, 18, 19, 1) 0%,
+    rgba(20, 20, 20, 0.8) 100%
+  );
+}
+
+.right {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(16, 18, 19, 1) 0%,
+    rgba(20, 20, 20, 0.8) 100%
+  );
+}
+
+.container::-webkit-scrollbar {
+  display: block;
+  height: 1.5vh;
+  margin: 0;
+}
+
+.container::-webkit-scrollbar:hover {
+  cursor: ew-resize;
+}
+
+.container::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #f2f2f2;
+}
+
+.container::-webkit-scrollbar-button {
+  width: 5vw;
+  height: 1.5vh;
+  margin: 0;
+}
+
+/* @media only screen and (max-width: 800px) {
+  .scroller {
+    display: none;
+  }
+} */

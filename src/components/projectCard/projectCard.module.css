@@ -1,0 +1,101 @@
+.card {
+  position: relative;
+  display: inline-block;
+  width: 75vh;
+  height: 75vh;
+  margin: 5vh 2.5vw 5vh 2.5vw;
+  box-sizing: border-box;
+  border: 1px solid #f2f2f2;
+  border-radius: 5px; 
+  text-align: center;
+  user-select: none;
+  white-space: normal;
+  transition: all .25s;
+}
+
+.card::after {
+  content: "";
+  background: #101213;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  box-sizing: border-box;
+  border-radius: 5px;
+  z-index: 1;   
+}
+
+.card:first-child {
+  margin-left: 5vw;
+}
+
+.card:last-child {
+  margin-right: 5vw;
+}
+
+.card:hover {
+  outline: none;
+  cursor: zoom-in;
+  transform: scale(1.05);
+}
+
+.cardClicked {
+  transform: scale(1.05);
+}
+
+.cardTitle {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  right: 50%;
+  font-size: 300%;
+  transform: translate(50%, -50%);
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.preview {
+  position: absolute;
+  display: block;
+  width: 90%;
+  height: 70%;
+  top: 15%;
+  transform: translateX(5%);
+}
+
+.link {
+  position: absolute;
+  display: inline-block;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 1% 5% 1% 5%;
+  color: #f2f2f2;
+  text-decoration: none;
+  margin: 1% 5%;
+  bottom: 5%;
+  transition: all .25s;
+  z-index: 2;
+}
+
+.right {
+  right: 10%;
+}
+
+.left {
+  left: 10%;
+}
+
+.link:hover {
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-aspect-ratio: 1/1) {
+  .card {
+    width: 75vw;
+    height: 75vw;
+  }
+}
+
+

@@ -1,0 +1,27 @@
+.messageContainer {
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%; 
+  height: 50vh;
+}
+
+.homeLink {
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 10px 50px 5px;
+  color: #f2f2f2;
+  text-decoration: none;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  transition: all .25s;
+}
+
+.homeLink:hover {
+  padding-bottom: 20px;
+}
